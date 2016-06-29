@@ -1,0 +1,41 @@
+@border-width: 1px;
+@border-style: solid;
+@border-color: gray;
+@column-iterations: 20;
+
+.table-inner-border > * {
+  border: ~"@{border-width} @{border-style} @{border-color}";
+  border-bottom: none;
+  border-right: none;
+}
+
+.column-loop (@column) when (@column > 0) {
+    .table-c-@{column} {
+        > * {
+          float: left;
+        }
+        > :nth-child(@{column}n + 1) {
+          clear: both;
+        }
+    }
+   
+	.column-border-loop (@column-line) when (@column-line > 0) {
+      .table-c-@{column}.table-inner-border {
+        > :nth-child(@{column-line}) {
+          border-top: none;
+        } 
+      }
+      
+      .column-border-loop(@column-line - 1);
+    }
+    .column-border-loop (@column);
+  
+  	.table-c-@{column}.table-inner-border {
+    	> :nth-child(@{column}n + 1) {
+          border-left: none;
+        } 
+  	}
+  
+    .column-loop(@column - 1);
+}
+.column-loop (@column-iterations);

@@ -1,0 +1,22 @@
+{
+  "name": "css.table-styles",
+  "description": "Table Styles CSS Library",
+  "main": "dist/table-styles.min.css",
+  "authors": [
+    "Oleh Birjukov"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "table",
+    "table-border",
+    "table-styles"
+  ],
+  "homepage": "https://github.com/all-bear/css.table-styles",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

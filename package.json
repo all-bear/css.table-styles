@@ -1,0 +1,35 @@
+{
+  "name": "css.table-styles",
+  "version": "1.0.0",
+  "description": "Table Styles CSS Library",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-jasmine-phantom": "^3.0.0",
+    "gulp-jasmine2-phantomjs": "^0.2.0",
+    "gulp-less": "^3.1.0",
+    "gulp-mocha-phantomjs": "^0.11.0",
+    "should": "^9.0.2",
+    "gulp-rename": "^1.2.2",
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/all-bear/css.table-styles.git"
+  },
+  "keywords": [
+    "table",
+    "table-border",
+    "table-styles"
+  ],
+  "author": "Oleh Birjukov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/all-bear/css.table-styles/issues"
+  },
+  "homepage": "https://github.com/all-bear/css.table-styles#readme"
+}
